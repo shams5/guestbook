@@ -13,8 +13,16 @@ class ConferenceController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('conference/index.html.twig', [
-            'controller_name' => 'ConferenceController',
-        ]);
+        // return $this->render('conference/index.html.twig', [
+        //     'controller_name' => 'ConferenceController',
+        // ]);
+        
+        return new Response(<<<EOF
+            '<html>
+                <body>
+                    <img src="/img/construction.gif" style="display:block; margin:auto; margin-top: 15%"/>
+                </body>
+            </html>
+        EOF);
     }
 }
